@@ -296,11 +296,6 @@ python train.py
 - 开源生态：感谢开源社区维护的工具与框架（PyTorch、Transformers、scikit-learn 等）。
 - 预训练模型：`hfl/chinese-roberta-wwm-ext`、`dmis-lab/biobert-base-cased-v1.2`、`trueto/medbert-base-wwm-chinese`
 
----
 
-## 11. 总结
-
-- 本项目把中文医疗关系抽取落到一个清晰的 **关系分类** 问题上，并验证了：在中文医疗语境下，选择更匹配语料的预训练模型（Chinese-RoBERTa）与更贴合任务的输入编码（实体显式标注/QA 提示）能带来显著收益。
-- 对 hard class 的处理上，“提升难类权重 + 采样聚焦难类”的思路有效：既能提升整体 Macro/Micro 指标，也能降低类别间性能波动（F1 Range）。
 
 
