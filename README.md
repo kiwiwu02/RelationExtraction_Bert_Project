@@ -1,6 +1,6 @@
 # RelationExtraction_Bert_Project
 
-基于预训练大语言模型 BERT 的中文医疗关系抽取（关系分类）项目。项目以 `Chinese-RoBERTa-wwm-ext` 为主干模型，通过多种文本编码策略（实体标注、QA 模板等）与“难分类类别增强”（加权损失 + 两阶段采样）提升关系分类效果。
+基于预训练大语言模型 BERT 的中文医疗关系抽取项目。项目以 `Chinese-RoBERTa-wwm-ext` 为主干模型，通过多种文本编码策略与“难分类类别增强”提升关系分类效果。
 
 - 课程/项目材料：`CISC7021_Report.pdf`、`CISC7021_PPT.pdf`
 - 代码入口：`Code/train.py`、`Code/test.py`
@@ -38,7 +38,7 @@
 
 ## 3. 数据集格式
 
-数据位于 `Code/dataset/`，采用 **JSONL**（一行一个 JSON）。每条样本至少包含：
+数据位于 `Code/dataset/`，采用 **JSONL**。每条样本至少包含：
 
 - `id`：样本 id
 - `sentence`：原始句子/段落
@@ -58,7 +58,7 @@
 
 ## 4. 文本编码策略
 
-训练脚本 `Code/train.py` 会循环训练 5 个版本（`version = 5`），对应 5 种编码方式：
+训练脚本 `Code/train.py` 会循环训练 5 个版本，对应 5 种编码方式：
 
 | v | 名称（`text_build_model[v]`） | 编码方式概述 |
 |---:|---|---|
