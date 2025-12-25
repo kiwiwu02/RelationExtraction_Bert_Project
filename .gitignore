@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+
+# OS
+.DS_Store
+
+# Training artifacts (do not commit)
+Code/checkpoint/
+Code/output/
+
+# Optional: HuggingFace cache (can be huge)
+# .cache/
+# ~/.cache/huggingface/

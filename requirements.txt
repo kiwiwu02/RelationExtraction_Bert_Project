@@ -1,0 +1,7 @@
+numpy>=1.24
+scikit-learn>=1.3
+transformers>=4.38
+pypdf>=5.0
+
+# PyTorch is required but installation differs by platform (CPU/CUDA/MPS).
+# Install it separately if needed: https://pytorch.org/get-started/locally/
